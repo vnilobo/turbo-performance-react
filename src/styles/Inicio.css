@@ -1,0 +1,136 @@
+main {
+    padding: 20px;
+}
+
+/*-----------------CUSTOMIZAÇÃO DO SOBRE NÓS-------------------------*/
+
+.sobrenos {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 20px 0;
+    gap: 50px;
+}
+
+.img_sobrenos {
+    margin: 0;
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.txt_sobrenos {
+    margin: 0;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.txt_sobrenos h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.txt_sobrenos p {
+    margin: 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+@media (max-width: 1024px) {
+    .sobrenos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*---------------------NOSSO ESTABELECIMENTO------------------------------*/
+
+.estabelecimento {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.estabelecimento h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.estabelecimento iframe {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/*---------------------NOSSOS PRODUTOS------------------------*/
+
+.titulo_produtos h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 20px 0 20px 0;
+}
+
+.produtos img {
+    width: 22%;
+    border-radius: 5px;
+    opacity: 1;
+    transition: 300ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.produtos img:hover {
+    opacity: 0.5;
+}
+
+.servicos h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.nav_produtos ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    /*desabilita o estilo de lista*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    /*espaçamento entre os botões*/
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.nav_produtos li {
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #F20000;
+}
+
+/*---------------------AJUSTES DO VIDEO----------------------------*/
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0 0;
+}
+
+.video iframe {
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}

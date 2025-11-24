@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Tomorrow', sans-serif;
+    line-height: 1.6;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p {
+    hyphens: auto;
+}

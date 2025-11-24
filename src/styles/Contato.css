@@ -1,0 +1,80 @@
+.contato-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.contato-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contato label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.form-contato input,
+.form-contato textarea {
+    margin-top: 6px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #999;
+    font-size: 16px;
+}
+
+.form-contato textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-contato button {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #F20000;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.form-contato button:hover {
+    background-color: #ff1010;
+}
+
+.grupo-radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6px;
+    gap: 50px;
+}
+
+.label-radio,
+.label-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.label-checkbox input {
+    margin-right: 6px;
+}
+
+.data-atual {
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}

@@ -1,0 +1,42 @@
+.produtos_header {
+    text-align: center;
+}
+
+.main_produtos {
+    padding: 40px;
+}
+
+.categoria {
+    margin-bottom: 40px;
+}
+
+.categoria_titulo {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.produtos_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card_produto {
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+/* Efeito hover scale */
+.card_produto:hover {
+    transform: scale(1.05);
+}
+
+.card_produto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
