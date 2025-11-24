@@ -61,7 +61,8 @@
 }
 
 .label-radio,
-.label-checkbox {
+.label-checkbox,
+.motivo-contato {
     display: flex;
     align-items: center;
     margin-top: 10px;

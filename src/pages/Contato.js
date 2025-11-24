@@ -2,16 +2,47 @@ import { useState, useEffect } from 'react';
 import '../styles/Contato.css';
 
 export default function Contato() {
-    const [dataAtual, setDataAtual] = useState("");
+
+    const [dataTexto, setDataTexto] = useState("");
 
     useEffect(() => {
-        const agora = new Date();
-        const dataFormatada = agora.toLocaleDateString("pt-BR", {
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric"
-        });
-        setDataAtual(dataFormatada);
+        const data = new Date();
+
+        const dia = new Array(
+            "Domingo",
+            "Segunda-feira",
+            "Terça-feira",
+            "Quarta-feira",
+            "Quinta-feira",
+            "Sexta-feira",
+            "Sábado"
+        );
+
+        const mes = new Array(
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abril",
+            "Maio",
+            "Junho",
+            "Julho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Dezembro"
+        );
+
+        const resultado =
+            dia[data.getDay()] +
+            ", " +
+            data.getDate() +
+            " de " +
+            mes[data.getMonth()] +
+            " de " +
+            data.getFullYear();
+
+        setDataTexto(resultado);
     }, []);
 
     return (
@@ -30,24 +61,21 @@ export default function Contato() {
                 </label>
 
                 <label>
-                    Marca:
-                    <input type="text" name="marca" placeholder="Marca do veículo" required />
-                </label>
-
-                <label>
-                    Modelo:
-                    <input type="text" name="modelo" placeholder="Modelo do veículo" required />
-                </label>
-
-                <label>
-                    Ano:
-                    <input type="number" name="ano" placeholder="Ano do veículo" required />
-                </label>
-
-                <label>
                     Mensagem:
-                    <textarea name="mensagem" placeholder="Informe seu problema ou dúvida..." required />
+                    <textarea name="mensagem" placeholder="Digite sua mensagem..." required />
                 </label>
+
+                <label className="motivo-contato">
+                    Informe o motivo do contato
+                    <select name="motivo" required>
+                        <option>Selecione</option>
+                        <option>Relatar um problema</option>
+                        <option>Dúvida</option>
+                        <option>Ajuda</option>
+                        <option>Outro</option>
+                    </select>
+                </label>
+
 
                 <label className="label-radio">
                     Qual meio de contato você prefere?
@@ -75,7 +103,7 @@ export default function Contato() {
                 <button type="submit">Enviar</button>
             </form>
 
-            <p className="data-atual">Data atual: {dataAtual}</p>
+            <p className="data-atual">{dataTexto}</p>
         </main>
     );
 }

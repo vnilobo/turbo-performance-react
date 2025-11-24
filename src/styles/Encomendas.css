@@ -1,0 +1,132 @@
+/* título */
+.encomendas-item {
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+/* -------------------------------- */
+/* TABELA */
+/* -------------------------------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead tr {
+    background-color: #d9d9d9;
+}
+
+th {
+    text-align: left;
+    padding: 12px;
+    font-weight: bold;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de hover normal */
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* -------------------------------- */
+/* EFEITO FILTRAR */
+/* -------------------------------- */
+
+.invisivel {
+    display: none !important;
+}
+
+/* -------------------------------- */
+/* REMOVER COM FADE */
+/* -------------------------------- */
+
+.fadeOut {
+    opacity: 0;
+    transform: scale(0.97);
+    transition: all 0.3s ease;
+}
+
+/* -------------------------------- */
+/* ESTILOS DE ERRO (IMPORTANTE) */
+/* -------------------------------- */
+
+.qtde-invalida {
+    background-color: red !important;
+    color: white !important;
+}
+
+/* garantir que o texto das células internas fique branco */
+.qtde-invalida td {
+    color: white !important;
+}
+
+.valor-invalido td {
+    color: red !important;
+}
+
+/* -------------------------------- */
+/* CAMPO DE BUSCA */
+/* -------------------------------- */
+
+.busca {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 18px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+/* -------------------------------- */
+/* FORMULÁRIO DE ADIÇÃO */
+/* -------------------------------- */
+
+.adicionar-encomenda {
+    margin-top: 25px;
+}
+
+.grupo1 {
+    display: grid;
+    grid-template-columns: 1fr 120px 260px 160px;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+/* Inputs e selects */
+.grupo1 input,
+.grupo1 select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    font-size: 15px;
+}
+
+/* Botão adicionar */
+.bt_adicionar {
+    padding: 12px 20px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.bt_adicionar:hover {
+    background-color: #444;
+}
+
+@media (max-width: 900px) {
+    .grupo1 {
+        grid-template-columns: 1fr;
+    }
+}
